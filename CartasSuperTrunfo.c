@@ -2,6 +2,8 @@
 
 int main() {
     
+    //O bloco de código abaixo é destinado para declaração das variaveis.
+
     char estado1[4];
     char código1[5];
     char cidade1[10];
@@ -12,6 +14,8 @@ int main() {
     float area1,area2;
     float pib1,pib2;
     int turisticos1,turisticos2;
+
+    //Os dois blocos abaixo são focados nas perguntas que serão exebidas na tela do usuário
 
     printf("CARTA 01\n");
     
@@ -47,6 +51,8 @@ int main() {
     printf("Quantos pontos turisticos tem na cidade.\n");
     scanf("%d", &turisticos2);
    
+    //Abaixo temo o bloco de configuração dos dados que serão apresentado na tela do usuário após a execução do código.
+
     printf("CARTA01\n");
     printf("ESTADO:%s\n" ,estado1);
     printf("CÓDIGO:%s\n",código1);
