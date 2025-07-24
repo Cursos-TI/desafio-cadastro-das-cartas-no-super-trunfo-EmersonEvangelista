@@ -7,8 +7,8 @@ int main() {
     char estado1[4];
     char código1[5];
     char cidade1[10];
-    char estado2[2]; 
-    char código2[3];
+    char estado2[3]; 
+    char código2[6];
     char cidade2[10];
     int população1,população2;
     float area1,area2;
@@ -58,8 +58,8 @@ int main() {
     printf("CÓDIGO:%s\n",código1);
     printf("NOME DA CIDADE:%s\n", cidade1);
     printf("POPULAÇÂO:%d\n", população1);
-    printf("ÁREA EM KM²:%f\n", area1);
-    printf("PIB:%f\n", pib1);
+    printf("ÁREA EM KM²:%.2f\n", area1);
+    printf("PIB:%.2f\n", pib1);
     printf ("NÚMERO DE PONTOS TURÍSTICOS:%d\n", turisticos1); 
 
     printf("CARTA02\n");
@@ -67,8 +67,8 @@ int main() {
     printf("CÓDIGO:%s\n",código2);
     printf("NOME DA CIDADE:%s\n", cidade2);
     printf("POPULAÇÂO:%d\n", população2);
-    printf("ÁREA EM KM²:%f\n", area2);
-    printf("PIB:%f\n", pib2);
+    printf("ÁREA EM KM²:%.2f\n", area2);
+    printf("PIB:%.2f\n", pib2);
     printf ("NÚMERO DE PONTOS TURÍSTICOS:%d\n", turisticos2);
 
     return 0;
