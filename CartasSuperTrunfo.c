@@ -12,7 +12,7 @@ int main() {
     char cidade2[10];
     int população1,população2;
     float area1,area2;
-    float pib1,pib2;
+    float pib1, pib2, densidade1, densidade2, percapita1, percapita2;
     int turisticos1,turisticos2;
 
     //Os dois blocos abaixo são focados nas perguntas que serão exebidas na tela do usuário
@@ -34,6 +34,12 @@ int main() {
     printf("Quantos pontos turisticos tem na cidade.\n");
     scanf("%d", &turisticos1);
 
+    //Abaixo temos o cálculo de Densidade populacional e PIB Percapita.
+
+    densidade1 = (float) população1 / area1;
+
+    percapita1 = (float) pib1 / população1;
+
     printf("CARTA 02\n");
     
     printf("Digite a sigla do estado que vai representar sua carta (Ex: BA, CE, RJ...)\n");
@@ -51,6 +57,12 @@ int main() {
     printf("Quantos pontos turisticos tem na cidade.\n");
     scanf("%d", &turisticos2);
    
+    //Abaixo temos o cálculo de Densidade populacional e PIB Percapita.
+    
+    densidade2 = (float) população2 / area2;
+
+    percapita2 = (float) pib2 / população2;
+
     //Abaixo temo o bloco de configuração dos dados que serão apresentado na tela do usuário após a execução do código.
 
     printf("CARTA01\n");
@@ -60,7 +72,9 @@ int main() {
     printf("POPULAÇÂO:%d\n", população1);
     printf("ÁREA EM KM²:%.2f\n", area1);
     printf("PIB:%.2f\n", pib1);
-    printf ("NÚMERO DE PONTOS TURÍSTICOS:%d\n", turisticos1); 
+    printf("NÚMERO DE PONTOS TURÍSTICOS:%d\n", turisticos1);
+    printf("DENSIDADE POPULACIONAL:%2.f\n", densidade1);
+    printf("PIB PER CAPITA:%2.f\n", percapita1); 
 
     printf("CARTA02\n");
     printf("ESTADO:%s\n" ,estado2);
@@ -70,6 +84,8 @@ int main() {
     printf("ÁREA EM KM²:%.2f\n", area2);
     printf("PIB:%.2f\n", pib2);
     printf ("NÚMERO DE PONTOS TURÍSTICOS:%d\n", turisticos2);
+    printf("DENSIDADE POPULACIONAL:%2.f\n", densidade2);
+    printf("PIB PER CAPITA:%2.f\n", percapita2); 
 
     return 0;
 }
