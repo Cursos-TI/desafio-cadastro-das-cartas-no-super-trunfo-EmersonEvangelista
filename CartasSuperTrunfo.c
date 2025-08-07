@@ -10,7 +10,7 @@ int main() {
     char estado2[3]; 
     char código2[6];
     char cidade2[10];
-    int população1,população2;
+    int população1,população2, comparacao1;
     float area1,area2,poder1,poder2; 
     int populacao, area, PIB, densidade, percapita, poder;
     float pib1, pib2, densidade1, densidade2, percapita1, percapita2;
@@ -110,6 +110,13 @@ int main() {
     printf("DENSIDADE POPULACIONAL:%d \n",densidade);
     printf("PIB PERCAPITA:%d \n",percapita);
     printf("SUPER PODER:%d \n",poder);
+
+    comparacao1 = população1 > população2;
+    
+    printf("\n COMPARAÇÃO DE CARTAS [ATRIBUTO:POPULAÇÃO]\n");
+    printf("CARTA 01 - %s (%s): %d\n", cidade1, estado1, população1);
+    printf("CARTA 02 - %s (%s): %d\n", cidade2, estado2, população2);
+    printf("RESULTADO: %d (%s) VENCEU!", comparacao1, cidade2, cidade2);
 
     return 0;
 }
