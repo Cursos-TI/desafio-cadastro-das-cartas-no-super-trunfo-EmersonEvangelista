@@ -111,12 +111,17 @@ int main() {
     printf("PIB PERCAPITA:%d \n",percapita);
     printf("SUPER PODER:%d \n",poder);
 
-    comparacao1 = população1 > população2;
-    
-    printf("\n COMPARAÇÃO DE CARTAS [ATRIBUTO:POPULAÇÃO]\n");
-    printf("CARTA 01 - %s (%s): %d\n", cidade1, estado1, população1);
-    printf("CARTA 02 - %s (%s): %d\n", cidade2, estado2, população2);
-    printf("RESULTADO: %d (%s) VENCEU!", comparacao1, cidade2, cidade2);
+    if (população1 > população2){
+        printf("\n COMPARAÇÃO DE CARTAS [ATRIBUTO:POPULAÇÃO]\n");
+        printf("CARTA 01 - %s (%s): %d\n", cidade1, estado1, população1);
+        printf("CARTA 02 - %s (%s): %d\n", cidade2, estado2, população2);
+        printf("RESULTADO:(%s) CARTA 01 VENCEU!",cidade1, cidade2);
+    } else {
+        printf("\n COMPARAÇÃO DE CARTAS [ATRIBUTO:POPULAÇÃO]\n");
+        printf("CARTA 01 - %s (%s): %d\n", cidade1, estado1, população1);
+        printf("CARTA 02 - %s (%s): %d\n", cidade2, estado2, população2);
+        printf("RESULTADO:(%s) CARTA 02 VENCEU!",cidade1, cidade2);         
+    }    
 
     return 0;
 }
